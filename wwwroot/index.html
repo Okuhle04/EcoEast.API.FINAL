@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="EcoEast environmental and waste management portal for BCMM communities.">
+  <title>EcoEast | Environmental Services</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <div id="auth-screen" class="auth-screen"></div>
+  <div class="app-shell" id="app-shell" hidden>
+    <aside class="sidebar" id="sidebar">
+      <a class="brand" href="#" aria-label="EcoEast home">
+        <span class="brand-mark">♻</span><span>Eco<span>East</span></span>
+      </a>
+      <nav id="main-nav" class="main-nav" aria-label="Main navigation"></nav>
+      <div class="sidebar-user">
+        <div class="avatar" id="user-avatar">S</div>
+        <div><strong id="user-name">Sipho M.</strong><small id="user-role">Resident</small></div>
+      </div>
+      <button class="sidebar-logout" type="button" id="logout-button">↪ <span>Log out</span></button>
+    </aside>
+
+    <main class="main-area">
+      <header class="topbar">
+        <button class="menu-toggle" id="menu-toggle" aria-label="Open navigation">☰</button>
+        <div class="breadcrumb"><span>EcoEast</span><b>/</b><strong id="crumb-title">Dashboard</strong></div>
+        <div class="topbar-actions">
+          <button class="icon-button" type="button" aria-label="Notifications" title="Notifications">♧<i class="notification-dot"></i></button>
+          <div class="municipal-brand"><span class="municipal-seal">BC</span><span><b>BUFFALO CITY</b><small>METROPOLITAN MUNICIPALITY</small></span></div>
+        </div>
+      </header>
+
+      <section class="page-wrap">
+        <div class="page-heading">
+          <div><p class="eyebrow" id="page-eyebrow">COMMUNITY ENVIRONMENTAL SERVICES</p><h1 id="page-title">Resident Dashboard</h1><p class="subheading" id="page-subtitle">Welcome back, Sipho. Here is your community service overview.</p></div>
+          <div class="heading-date" id="today-label"></div>
+        </div>
+        <div id="page-content" aria-live="polite"></div>
+        <footer class="footer"><span>EcoEast · Cleaner communities, greener futures.</span><span>BCMM Environmental Services</span></footer>
+      </section>
+    </main>
+  </div>
+  <div class="mobile-scrim" id="mobile-scrim"></div>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
